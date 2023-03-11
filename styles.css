@@ -1,9 +1,16 @@
+html {
+    scrollbar-gutter: stable;
+}
+
 body {
     text-align: center;
     font-size: 3rem;
     background-color: #ffffbb;
-    margin-right: 35px;
-    width: 100vw;
+    margin: 0 0 70vh;
+}
+
+img {
+    max-width: 70vw;
 }
 
 .container {
