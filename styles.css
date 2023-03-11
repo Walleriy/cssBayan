@@ -1,15 +1,22 @@
+html {
+    scrollbar-gutter: stable;
+}
+
 body {
     text-align: center;
     font-size: 3rem;
+    background-color: #ffffbb;
+    margin: 0 0 70vh;
 }
 
-h3 {
-    display: inline;
+img {
+    max-width: 70vw;
 }
 
 .container {
     width: 90%;
     margin: auto;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 820px) {
@@ -25,9 +32,52 @@ h3 {
 }
 
 .item {
+    border-top: 0.2rem solid grey;
+    margin-bottom: 1.5rem;
+}
 
+.item img {
+    max-height: 0;
+    transform-origin: top;
+    transition: all 0.26s ease;
+}
+
+.item i {
+    opacity: 0%;
+    transition: all 0.3s linear,opacity 0.3s linear;
 }
 
 .item-header {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+input {
+    display: none
+}
+
+input:checked +label img {
+    opacity: 100%;
+    max-height: 100vh;
+}
+
+input:checked +label i {
+    rotate: 45deg;
+}
+
+@media (pointer: fine) {
+    .item:hover img {
+        max-height: 100vh;
+    }
+
+    .container:hover i {
+        opacity: 100%;
+    }
+
+
+    .item:hover {
+        background-color: #ffff21;
+    }
 }
