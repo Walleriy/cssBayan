@@ -35,27 +35,15 @@ img {
     margin-bottom: 1.5rem;
 }
 
-.item:hover {
-    background-color: #ffff22;
-}
-
 .item img {
     max-height: 0;
     transform-origin: top;
     transition: all 0.26s ease;
 }
 
-.item:hover img {
-    max-height: 100vh;
-}
-
 .item i {
     opacity: 0%;
-    transition: opacity 0.3s linear,opacity 0.3s linear;
-}
-
-.item:hover i {
-    opacity: 100%;
+    transition: all 0.3s linear,opacity 0.3s linear;
 }
 
 .item-header {
@@ -81,4 +69,19 @@ input:checked +label i {
 
 label {
     cursor: pointer;
+}
+
+@media (pointer: fine) {
+    .item:hover img {
+        max-height: 100vh;
+    }
+
+    .item:hover i {
+        opacity: 100%;
+    }
+
+
+    .item:hover {
+        background-color: #ffff22;
+    }
 }
