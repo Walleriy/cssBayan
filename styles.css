@@ -74,6 +74,11 @@ input:checked +label img {
     max-height: 100vh;
 }
 
+input:checked +label i {
+    rotate: 45deg;
+    opacity: 100%;
+}
+
 label {
     cursor: pointer;
 }
