@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h3 {
+    display: inline;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (max-width: 820px) {
+    .container {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        font-size: 1rem;
+    }
+}
+
+.item {
+
+}
+
+.item-header {
+
+}
